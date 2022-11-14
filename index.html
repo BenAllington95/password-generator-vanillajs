@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Password Generator</title>
+</head>
+<body>
+
+    <div class="theme">
+        <div class="container">
+            <div class="theme-items">
+                <button id="theme-btn"><p class="button-text">☀️</p></button>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <div class="header">
+        <div class="container">
+            <div class="header-items">
+                <h1><span class="test">get</span><span class="two">password</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="container">
+            <div class="main-items" id="main-items">
+                <div class="checkbox">
+                    <label for="symbols">symbols</label>
+                    <input type="checkbox" name="symbols" id="symbols">
+                </div>
+                <div class="checkbox">
+                    <label for="numbers">numbers</label>
+                    <input type="checkbox" name="numbers" id="numbers">
+                </div>
+                <div class="length">
+                    <label for="range">length</label>
+                    <input type="range" name="range" id="range" min="7" max="15" value="7">
+                </div>
+            </div>
+            <div class="main-items-btn">
+                <button id="button">generate</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="secondary">
+        <div class="container">
+            <div class="secondary-items" id="secondary-items">
+                
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
