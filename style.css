@@ -22,12 +22,9 @@ label {
 h1 {
     font-size: 48px;
     letter-spacing: .8px;
-}
-
-button,
-h1 {
     color: #023e8a;
 }
+
 
 .button-text {
     margin: 0;
@@ -40,9 +37,18 @@ h1 {
     width: 90%;
 }
 
+
+
 .header {
-    /* background: pink; */
     padding: 50px 0;
+}
+
+.header-items h1 {
+    width: 100%;
+}
+
+span {
+    display: inline-block;
 }
 
 .main-items {
@@ -60,9 +66,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background: #ade8f4; */
     padding: 10px 0;
-    /* border-radius: 25px; */
 
 }
 
@@ -74,8 +78,8 @@ button {
     border: none;
     cursor: pointer;
     transition: background 0.2s, color 0.2s;
-    color: #023e8a;
-    background:#90e0ef;
+    background: #023e8a;
+    color:#90e0ef;
     
 }
 
@@ -197,5 +201,10 @@ input[type="range"]::-webkit-slider-thumb {
         padding: 0.5em 0;
         border-radius: 7px;
     }
+
+    .theme {
+        display: none;
+    }
+    
 
 }
