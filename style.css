@@ -36,7 +36,8 @@ h1 {
 
 .container {
     margin: 0 auto;
-    width: 600px;
+    max-width: 600px;
+    width: 90%;
 }
 
 .header {
@@ -178,3 +179,23 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 100%;
 }
 
+
+@media (max-width: 768px) {
+    #button {
+        width: 100%;
+    }
+
+    .main-items {
+        flex-direction: column;
+        background: none;
+    }
+
+    .checkbox, .length {
+        background: #023e8a;
+        width: 100%;
+        margin-bottom: 1em;
+        padding: 0.5em 0;
+        border-radius: 7px;
+    }
+
+}
