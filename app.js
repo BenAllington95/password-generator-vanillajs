@@ -40,7 +40,7 @@ button.addEventListener("click", function() {
             inputChange()
             symbols.checked = false
             numbers.checked = false
-        }, 5000);
+        }, 10000);
 })
 
 function getRandomNum(arr) {
@@ -91,10 +91,6 @@ function inputChange() {
         symbols.disabled = !symbols.disabled
 }
 
-themeBtn.addEventListener("click", function() {
-    document.body.classList.toggle("dark-mode")
-    document.getElementById("main-items").style.background = "white"
-})
 
 function copyElementText(id) {
     var text = document.getElementById(id).innerText;

@@ -71,15 +71,15 @@ span {
 }
 
 button {
-    padding: 10px 25px;
-    border-radius: 25px;
+    padding: 25px;
+    border-radius: 10px;
     font-weight: bold;
     font-size: 20px;
     border: none;
     cursor: pointer;
     transition: background 0.2s, color 0.2s;
-    background: #023e8a;
-    color:#90e0ef;
+    background: #90e0ef;
+    color:#023e8a;
     
 }
 
@@ -127,7 +127,7 @@ input[type="range"]::-webkit-slider-thumb {
     margin: 0 auto;
     margin-top: 10px;
     width: 100%;
-    height: 75px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,7 +141,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .color {
-    background: #90e0ef;
+    background: #edae49ae;
     color: #023e8a;
 }
 
@@ -161,28 +161,6 @@ input[type="range"]::-webkit-slider-thumb {
     background: #90e0ef;
 }
 
-.theme {
-    padding: 25px 0 0 0;
-}
-
-.theme-items {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.dark-mode {
-    background:#023e8a;
-}
-
-#theme-btn {
-    height: 50px;
-    width: 50px;
-    font-size: 24px;
-    padding: 0px;
-    border-radius: 100%;
-}
-
 
 @media (max-width: 768px) {
     #button {
@@ -192,19 +170,14 @@ input[type="range"]::-webkit-slider-thumb {
     .main-items {
         flex-direction: column;
         background: none;
+        gap: 10px;
     }
 
     .checkbox, .length {
         background: #023e8a;
         width: 100%;
-        margin-bottom: 1em;
-        padding: 0.5em 0;
+        padding: 1em 0;
         border-radius: 7px;
     }
-
-    .theme {
-        display: none;
-    }
-    
 
 }
