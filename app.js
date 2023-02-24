@@ -33,7 +33,7 @@ button.addEventListener("click", function() {
 
         setTimeout(() => {
             document.getElementById("secondary-items").innerHTML = `
-        <div id="password-id" onclick="copyElementText(this.id)" class="password color">${generate()}</div>`
+        <div id="password-id" onclick="copyElementText(this.id)" class="password copy"><h1>${generate()}</h1></div>`
         }, 3000);
 
         setTimeout(() => {
