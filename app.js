@@ -3,10 +3,11 @@ const themeBtn = document.getElementById("theme-btn")
 const range = document.getElementById("range")
 const numbers = document.getElementById("numbers")
 const symbols = document.getElementById("symbols")
+const charLength = document.getElementById("char-length")
 
 const alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 const numbersArray = [0,1,2,3,4,5,6,7,8,9]
-const symbolsArray = ["~","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]"]
+const symbolsArray = ["~", "`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "-", "+", "=", "{", "[", "}", "]", "|", ":", ";", "'", "<", ",", ">", ".", "?"]
 
 button.addEventListener("click", function() {
         document.getElementById("secondary-items").style.display = "block"
@@ -41,6 +42,10 @@ button.addEventListener("click", function() {
             symbols.checked = false
             numbers.checked = false
         }, 10000);
+})
+
+document.getElementById("range").addEventListener("input", function() {
+    charLength.innerHTML = document.getElementById("range").value
 })
 
 function getRandomNum(arr) {
